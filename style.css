@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Outfit', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    margin: 30px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#city-search {
+    width: 300px;
+    height: 40px;
+    border: solid 1px;
+    border-radius: 10px;
+    font-family: 'Outfit', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    background-color: #175cbc23;
+    padding-left: 10px;
+}
+
+#search-btn {
+    width: 80px;
+    height: 40px;
+    border: solid 1px;
+    border-radius: 10px;
+    font-family: 'Outfit', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(61, 116, 175, 0.696);
+}
+
+.image {
+    width: 100%;
+    height: 100px;
+    > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.form {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    padding: 20px;
+    background-color: rgba(61, 116, 175, 0.696);
+    border: none;
+    border-radius: 10px;
+}
+
+.hidden {
+    position: fixed;
+    top: 200px;
+    > h1 {
+        font-size: 4rem;
+        margin: 20px;
+    }
+}
