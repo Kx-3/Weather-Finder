@@ -21,7 +21,7 @@ seachBox.onkeydown = (e) => {
 }
 
 const fetchData = async () => {
-    const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}`)
+    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}`)
     const data = await response.json()
     console.log(data)
     const card = document.createElement('div')
